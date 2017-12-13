@@ -1,4 +1,4 @@
-# scrollToTop
+# roll.js
 
 > Simple scroll to top function. No dependencies.
 
