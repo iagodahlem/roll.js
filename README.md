@@ -1,6 +1,6 @@
 # scrollToTop
 
-> TODO: Write a project description
+> Simple scroll to top function. No dependencies.
 
 ## Requirements
 
