@@ -1,0 +1,13 @@
+{
+  "name": "scrollToTop",
+  "version": "1.0.0",
+  "description": "Simple scroll to top function. No dependencies.",
+  "main": "index.js",
+  "repository": "git@github.com:iagodahlem/scrollToTop.git",
+  "author": "Iago Dahlem Lorensini <iagodahlemlorensini@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "scroll-to-top"
+    "scrollToTop",
+  ]
+}
