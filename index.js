@@ -6,3 +6,5 @@ const roll = () => {
     window.scrollTo(0, c - c/8)
   }
 }
+
+module.exports = roll
