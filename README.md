@@ -2,13 +2,19 @@
 
 > Simple scroll to top function. No dependencies.
 
-## Requirements
-
-> TODO: Describe the requirements
-
 ## Install
 
-> TODO: Describe the installation process
+You can get it on [npm](https://www.npmjs.com/package/roll.js).
+
+```sh
+npm install roll.js
+```
+
+Or using yarn.
+
+```sh
+yarn add roll.js
+```
 
 ## Usage
 
