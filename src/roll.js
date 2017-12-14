@@ -7,4 +7,4 @@ const roll = () => {
   }
 }
 
-export default roll
+module.exports = roll

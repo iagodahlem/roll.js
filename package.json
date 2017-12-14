@@ -13,8 +13,8 @@
     "vanilla"
   ],
   "scripts": {
-    "build": "browserify src/roll.js -o dist/roll.js --standalone roll -t [babelify] -p [bannerify --file .banner]",
-    "minify": "uglifyjs dist/roll.js -o dist/roll.min.js --comments '/!/'",
+    "build": "browserify src/roll.js -s roll -t [babelify] -p [bannerify --file .banner] -o dist/roll.js",
+    "minify": "uglifyjs dist/roll.js --comments '/!/' -m ie8=true -c ie8=true,unused=false -o dist/roll.min.js",
     "prepublish": "yarn build && yarn minify",
     "release": "np"
   },
