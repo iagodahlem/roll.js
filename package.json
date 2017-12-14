@@ -13,7 +13,8 @@
   "scripts": {
     "build": "browserify src/roll.js -o dist/roll.js -t [babelify] -p [bannerify --file .banner]",
     "minify": "uglifyjs dist/roll.js -o dist/roll.min.js --comments '/!/'",
-    "prepublish": "yarn build && yarn minify"
+    "prepublish": "yarn build && yarn minify",
+    "release": "np"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -21,6 +22,7 @@
     "babelify": "^8.0.0",
     "bannerify": "^1.0.1",
     "browserify": "^14.5.0",
+    "np": "^2.18.2",
     "uglify-js": "^3.2.2"
   }
 }
