@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>roll.js | Simple scroll to top function. No dependencies.</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="description" content="Simple scroll to top function. No dependencies.">
+  <meta name="author" content="Iago Dahlem Lorensini">
+
+  <meta property="og:title" content="roll.js">
+  <meta property="og:description" content="Simple scroll to top function. No dependencies.">
+  <meta property="og:url" content="https://iagodahlem.github.io/roll.js/">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 3000px;
+    }
+
+    .button {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+  <button class="button">
+    Go to top
+  </button>
+
+  <script src="dist/roll.min.js"></script>
+  <script>
+    var button = document.querySelector('button')
+
+    button.addEventListener('click', () => {
+      roll()
+    })
+  </script>
+</body>
+</html>
