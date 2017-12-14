@@ -7,8 +7,10 @@
   "author": "Iago Dahlem Lorensini <iagodahlemlorensini@gmail.com>",
   "license": "MIT",
   "keywords": [
+    "browser",
+    "scroll",
     "scroll-to-top",
-    "scrollToTop"
+    "vanilla"
   ],
   "scripts": {
     "build": "browserify src/roll.js -o dist/roll.js -t [babelify] -p [bannerify --file .banner]",
