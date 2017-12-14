@@ -16,9 +16,37 @@ Or using yarn.
 yarn add roll.js
 ```
 
+## Setup
+
+You can import it using ES6 modules.
+
+```js
+import roll from 'roll.js'
+```
+
+Or with CommonJS as well.
+
+```js
+const roll = require('roll.js')
+```
+
+If you are not using a bundler, just include the script located in the `dist` folder.
+
+```html
+<script src="dist/roll.min.js"></script>
+```
+
 ## Usage
 
-> TODO: Write usage instructions
+Now, all you need to do is call the `roll` function into your desired event.
+
+```js
+const scrollToTop = document.querySelector('.js-scrollToTop')
+
+scrollToTop.addEventListener('click', () => {
+  roll()
+})
+```
 
 ## Contributing
 
