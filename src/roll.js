@@ -1,9 +1,11 @@
 const roll = () => {
-  const c = document.documentElement.scrollTop || document.body.scrollTop
+  const current = document.documentElement.scrollTop || document.body.scrollTop
+  const xCoord = 0
+  const yCoord = current - current / 8
 
-  if (c > 0) {
-    window.requestAnimationFrame(roll)
-    window.scrollTo(0, c - c/8)
+  if (current > 0) {
+    requestAnimationFrame(roll)
+    scrollTo(xCoord, yCoord)
   }
 }
 
