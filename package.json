@@ -2,7 +2,7 @@
   "name": "roll.js",
   "version": "1.0.1",
   "description": "Simple scroll to top function. No dependencies.",
-  "main": "dist/roll.js",
+  "main": "lib/roll.js",
   "repository": "git@github.com:iagodahlem/roll.js.git",
   "author": "Iago Dahlem Lorensini <iagodahlemlorensini@gmail.com>",
   "license": "MIT",
@@ -13,9 +13,10 @@
     "vanilla"
   ],
   "scripts": {
-    "build": "browserify src/roll.js -s roll -t [babelify] -p [bannerify --file .banner] -o dist/roll.js",
+    "build": "browserify src/roll.js -s roll -t [babelify]",
     "minify": "uglifyjs dist/roll.js --comments '/!/' -m ie8=true -c ie8=true,unused=false -o dist/roll.min.js",
-    "prepublish": "yarn build && yarn minify",
+    "dist": "yarn build -p [bannerify --file .banner] -o dist/roll.js && yarn minify",
+    "prepublish": "yarn build -o lib/roll.js",
     "release": "np"
   },
   "devDependencies": {
