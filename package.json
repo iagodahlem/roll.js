@@ -1,6 +1,6 @@
 {
   "name": "roll.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple scroll to top function. No dependencies.",
   "main": "lib/roll.js",
   "repository": "git@github.com:iagodahlem/roll.js.git",
