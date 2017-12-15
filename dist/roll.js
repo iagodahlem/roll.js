@@ -1,5 +1,5 @@
 /*!
- * roll.js v1.0.0
+ * roll.js v1.0.1
  * https://iagodahlem.github.io/roll.js
  *
  * Licensed MIT © Iago Dahlem Lorensini
@@ -8,11 +8,13 @@
 "use strict";
 
 var roll = function roll() {
-  var c = document.documentElement.scrollTop || document.body.scrollTop;
+  var current = document.documentElement.scrollTop || document.body.scrollTop;
+  var xCoord = 0;
+  var yCoord = current - current / 8;
 
-  if (c > 0) {
-    window.requestAnimationFrame(roll);
-    window.scrollTo(0, c - c / 8);
+  if (current > 0) {
+    requestAnimationFrame(roll);
+    scrollTo(xCoord, yCoord);
   }
 };
 
